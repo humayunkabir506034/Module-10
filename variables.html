@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS veriable</title>
+    <style>
+        :root{
+            --primary-color:purple;
+            --secondary-color:blue;
+            --font-size:20px;
+
+        }
+        h1{
+            color: var(--primary-color);
+        }
+    h5{
+        background-color: var(--primary-color);
+    }
+
+    .box{
+        border: 2px solid var(--primary-color);
+        width:calc(100% - 300px) ;
+    }
+
+    .box p{
+        color: var(--primary-color);
+    }
+
+    .sidebar{
+        background-color: lightgray;
+    }
+    .content{
+        background-color: lightskyblue;
+    }
+
+    .container{
+        display: grid;
+        gap: 20px;
+        grid-template-rows: 200px;
+        grid-template-columns: 200px calc(100% - 200px - 20px);
+    }
+    </style>
+</head>
+
+<body>
+
+    <a href="index.html">Overflow and Ellipsis</a>
+    <a href="transform.html">Transform</a>
+    <a href="transition.html">Transition</a>
+    <a href="variables.html">veriables</a>
+    <a href="https://www.photopea.com/">photopea</a>
+
+    <h1>My custom properties</h1>
+    <h5>Also commonly knows as CSS veriables</h5>
+    <div class="box">
+        <h3>I am doing something</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit rerum amet quo, blanditiis sint magnam nostrum, qui placeat tenetur, est libero reprehenderit consequuntur ab vero saepe illo officiis accusantium tempore.</p>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Main Content</div>
+    </div>
+
+</body>
+
+</html>
